@@ -383,3 +383,48 @@ footer{
     line-height: 1.4rem;
     opacity: 90%;
 }
+
+.background{
+    filter: blur(10px)
+}
+.container {
+    text-align: center;
+    color: black;
+}
+
+.comingsoon{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 100000 !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.containerh1{
+    font-size: 6vw;
+    color:white;
+    font-family: Arial, sans-serif;
+    line-height: 35%;
+
+}
+
+.comingsoonp{
+    font-size: 3vw;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 35%;
+}
+.line2{
+    height: 6px;
+    margin: 1rem;
+    width: 97%;
+    background-color: #ffc41c;
+}
