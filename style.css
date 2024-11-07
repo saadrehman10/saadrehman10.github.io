@@ -1,4 +1,4 @@
-a{
+noa{
     text-decoration: none;
     color: white;
 }
@@ -385,7 +385,7 @@ footer{
 }
 
 .background{
-    filter: blur(10px)
+    filter: blur(0px)
 }
 .container {
     text-align: center;
