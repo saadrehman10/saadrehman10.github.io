@@ -384,9 +384,7 @@ footer{
     opacity: 90%;
 }
 
-.background{
-    filter: blur(0px)
-}
+
 .container {
     text-align: center;
     color: black;
