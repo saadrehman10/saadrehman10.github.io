@@ -10,12 +10,14 @@ $(document).ready(function () {
     });
 
     if ($.cookie('color')) {
-        $('#color').attr('href', 'css/colors/' + $.cookie('color'));
+        // $('#color').attr('href', 'css/colors/' + $.cookie('color'));
+         $('#color').attr('href', 'css/colors/green.css');
     }
     $(document).on('click', '.demo .color',function (e) {
         e.preventDefault();
         $.cookie('color', $(this).data('color'), { expires: 7, path: '/' });
-        $('#color').attr('href', 'css/colors/' + $(this).data('color'));
+        // $('#color').attr('href', 'css/colors/' + $(this).data('color'));
+        $('#color').attr('href', 'css/colors/green.css');
     });
 
     if ($.cookie('box')) {
@@ -43,7 +45,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.demo .reset', function (e) {
         e.preventDefault();
-        $('#color').attr('href', 'css/colors/red.css');
+        $('#color').attr('href', 'css/colors/green.css');
         $('html').removeClass('boxed');
         $('body').removeAttr('style');
         $.removeCookie('color', { path: '/' });
@@ -51,21 +53,21 @@ $(document).ready(function () {
         $.removeCookie('background', { path: '/' });
     });
 
-    var html = '' +
-        '<div class="demo">' +
-        '<a href="#" class="settings">' +
-        '<i class="fa fa-cog fa-spin"></i>' +
-        '</a>' +
-        '<h5>SELECT A COLOR</h5>' +
-        '<a href="#" class="color" data-color="red.css" style="background-color:#ea0026"></a>' +
-        '<a href="#" class="color" data-color="green.css" style="background-color:#52bf00"></a>' +
-        '<a href="#" class="color" data-color="yellow.css" style="background-color:#ffb100"></a>' +
-        '<a href="#" class="color" data-color="orange.css" style="background-color:#ff5a14"></a>' +
-        '<a href="#" class="color" data-color="turquoise.css" style="background-color:#00b4d9"></a>' +
-        '<a href="#" class="color" data-color="pink.css" style="background-color:#fb1bc1"></a>' +
-        '<a href="#" class="color" data-color="purple.css" style="background-color:#BF55EC"></a>' +
-        '<hr />' +
-        '<a href="#" class="reset btn btn-sm btn-info p-l-30 p-r-30">Reset</a>' +
-        '</div>';
-    $('body').append(html);
+    // var html = '' +
+    //     '<div class="demo">' +
+    //     '<a href="#" class="settings">' +
+    //     '<i class="fa fa-cog fa-spin"></i>' +
+    //     '</a>' +
+    //     '<h5>SELECT A COLOR</h5>' +
+    //     '<a href="#" class="color" data-color="red.css" style="background-color:#ea0026"></a>' +
+    //     '<a href="#" class="color" data-color="green.css" style="background-color:#52bf00"></a>' +
+    //     '<a href="#" class="color" data-color="yellow.css" style="background-color:#ffb100"></a>' +
+    //     '<a href="#" class="color" data-color="orange.css" style="background-color:#ff5a14"></a>' +
+    //     '<a href="#" class="color" data-color="turquoise.css" style="background-color:#00b4d9"></a>' +
+    //     '<a href="#" class="color" data-color="pink.css" style="background-color:#fb1bc1"></a>' +
+    //     '<a href="#" class="color" data-color="purple.css" style="background-color:#BF55EC"></a>' +
+    //     '<hr />' +
+    //     '<a href="#" class="reset btn btn-sm btn-info p-l-30 p-r-30">Reset</a>' +
+    //     '</div>';
+    // $('body').append(html);
 });
