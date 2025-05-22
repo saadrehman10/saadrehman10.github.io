@@ -71,3 +71,6 @@ $(document).ready(function () {
     //     '</div>';
     // $('body').append(html);
 });
+
+
+// Change the default color for the theme by changing the href attribute of the #color link in each and serrate .html file 
