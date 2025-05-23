@@ -37,7 +37,7 @@ $(document).ready( function() {
     if ($('.element').length) {
         $('.element').each(function () {
             $(this).typed({
-                strings: [$(this).data('text1'), $(this).data('text2'), $(this).data('text3')], 
+                strings: [$(this).data('text1'), $(this).data('text2'), $(this).data('text3'), $(this).data('text4')], 
                 loop: $(this).data('loop') ? $(this).data('loop') : false ,
                 backDelay: $(this).data('backdelay') ? $(this).data('backdelay') : 2000 ,                
                 typeSpeed: 10,
@@ -129,7 +129,7 @@ $(document).ready( function() {
                 loadMore: {
                     element: '#port-loadMore',
                     action: 'click',
-                    loadItems: 3,
+                    loadItems: 5,
                 }
             }
     }); 
